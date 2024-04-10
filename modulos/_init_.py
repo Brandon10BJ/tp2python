@@ -21,3 +21,6 @@ def jugadormasinfluyente(jugadores):
        return   nommasinflu,masinfluyente
 
 
+def golestotalespromedio(jugadores):
+       return sum(gol[0] for  gol in jugadores.values())
+
