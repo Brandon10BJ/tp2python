@@ -10,3 +10,14 @@ def maximogoleador(jugadores):
        return max(jugadores.items(), key=lambda j: j[1][0])
 
 
+def jugadormasinfluyente(jugadores):
+       masinfluyente=-1 # lo usamos como sumtario para sacar guardar el maximo
+       nommasinflu=""
+       for jugador,estadistica in jugadores.items():
+             total = lambda datos: (estadistica[0]*1.5)+(estadistica[1]*1.25)+(estadistica[2])
+             if total(estadistica) > masinfluyente:
+                   masinfluyente=total(estadistica)
+                   nommasinflu=jugador
+       return   nommasinflu,masinfluyente
+
+
