@@ -24,3 +24,6 @@ def jugadormasinfluyente(jugadores):
 def golestotalespromedio(jugadores):
        return sum(gol[0] for  gol in jugadores.values())
 
+def promediogoleador(goleador):
+       return goleador[1][0]/25
+
