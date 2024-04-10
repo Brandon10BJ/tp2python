@@ -4,3 +4,9 @@ def crearestructura(jugadores,nombres,goals,goals_avoided,assists):
       #el nom[:-1] lo que hace es tomar el nombre del judor/a salvo el ultimo elemento que es la coma
      print(jugadores)#imprimimos para ver los resultados de como nos queda la lista momentaneameamente
      return jugadores
+
+
+def maximogoleador(jugadores):
+       return max(jugadores.items(), key=lambda j: j[1][0])
+
+
